@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ativ05-Ex02</string>
+    <string name="s_hint">Ex: 1024</string>
+    <string name="s_converter">Converter</string>
+    <string name="s_bytes">Bytes</string>
+    <string name="s_kb">KB</string>
+    <string name="s_mb">MB</string>
+    <string name="s_gb">GB</string>
+    <string name="s_tb">TB</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="217dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="@string/s_hint"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="199dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValor">
+
+        <RadioButton
+            android:id="@+id/rbBytes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_bytes" />
+
+        <RadioButton
+            android:id="@+id/rbKB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_kb" />
+
+        <RadioButton
+            android:id="@+id/rbMB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_mb" />
+
+        <RadioButton
+            android:id="@+id/rbGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_gb" />
+
+        <RadioButton
+            android:id="@+id/rbTB"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/s_tb" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConverter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
